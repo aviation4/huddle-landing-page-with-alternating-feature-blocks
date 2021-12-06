@@ -8,7 +8,7 @@ footer {
 
 .logo {
   filter: grayscale(100%) invert(100%);
-  width: 50%;
+  width: 170px;
   margin: 2rem 0;
 }
 
@@ -17,9 +17,6 @@ footer p {
   opacity: 0.8;
 }
 
-.info-set {
-
-}
 
 .info {
   display: grid;
@@ -53,6 +50,7 @@ footer a {
   display: inline-block;
   position: relative;
   margin: 0.5rem 0;
+  overflow: hidden;
 }
 
 footer a::after {
@@ -64,27 +62,10 @@ footer a::after {
   height: 0.15em;
   background-color: var(--primary-pink);
   opacity: 0;
- transform: translate3d(-100%, 0, 0);
- transition: opacity 300ms, transform 300ms;
-}
-
-footer a:hover::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-li a {
-  overflow: hidden;
-}
-
-li a::after {
-  opacity: 0;
   transform: translate3d(-100%, 0, 0);
+  transition: all 300ms;
 }
 
-li a:hover::after {
-  transform: translate3d(0, 0, 0);
-}
 
 footer a:active {
   opacity: 0.7;
@@ -101,8 +82,12 @@ footer a:active {
   width: 40px;
   border: 1px solid white;
   border-radius: 40px;
-  //background: gray;
   margin: 0 0.5rem;
+  transition: all 300ms;
+}
+
+.social-media-icon:active {
+  filter: brightness(0.7);
 }
 
 .social-media-icon-set span {
@@ -113,4 +98,17 @@ footer a:active {
 .copyright {
   font-size: 0.7rem;
   text-align: center;
+}
+
+
+@media (hover:hover){
+  footer a:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .social-media-icon:hover {
+    background: var(--primary-pink);
+    border: 1px solid var(--primary-pink);
+  }
 }
