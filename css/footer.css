@@ -109,7 +109,7 @@ footer a:active {
   }
 
   .social-media-icon:hover {
-    background: var(--primary-pink);
+    color: var(--primary-pink);
     border: 1px solid var(--primary-pink);
   }
 }
