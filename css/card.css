@@ -1,0 +1,31 @@
+.card {
+  background: white;
+  padding: 2rem;
+  margin: 3rem 1rem;
+  box-shadow: 0 0 20px hsla(192, 100%, 9%, 0.3);
+  border-radius: 20px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: var(--neutral-grayish-blue);
+  font-size: 0.9rem;
+}
+
+.card img {
+  padding: 1.5rem;
+}
+
+.card:first-child {
+  margin-top: 4rem;
+}
+
+.card:last-child {
+  position: relative;
+  top: 140px;
+  padding: 1rem;
+  margin-top: 0;
+}

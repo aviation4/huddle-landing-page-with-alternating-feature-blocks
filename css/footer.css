@@ -1,0 +1,116 @@
+footer {
+  background: hsl(192, 100%, 9%);
+  color: white;
+  padding: 1rem;
+  padding-top: 150px;
+  text-align: left;
+}
+
+.logo {
+  filter: grayscale(100%) invert(100%);
+  width: 50%;
+  margin: 2rem 0;
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.info-set {
+
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 40px;
+}
+
+.info p {
+  grid-column-start: 2;
+  margin-top: 0;
+}
+
+.info span {
+  margin-top: 3px;
+}
+
+.links {
+  margin: 3rem 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: block;
+}
+
+footer a {
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15em;
+  background-color: var(--primary-pink);
+  opacity: 0;
+ transform: translate3d(-100%, 0, 0);
+ transition: opacity 300ms, transform 300ms;
+}
+
+footer a:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+li a {
+  overflow: hidden;
+}
+
+li a::after {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+li a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+footer a:active {
+  opacity: 0.7;
+}
+
+.social-media-icon-set {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.social-media-icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 40px;
+  //background: gray;
+  margin: 0 0.5rem;
+}
+
+.social-media-icon-set span {
+  position: relative;
+  top: 6px;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  text-align: center;
+}
