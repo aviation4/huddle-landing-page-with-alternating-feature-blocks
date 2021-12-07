@@ -56,6 +56,10 @@
   .card img {
     padding: var(--space-xl);
   }
+
+  .card h2 {
+    font-size: var(--text-lg);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -63,8 +67,8 @@
     display: flex;
     flex-direction: row-reverse;
     text-align: left;
-    padding: var(--space-lg) var(--space-xxxl);
-    margin: var(--space-lg) auto;
+    padding: 0 var(--space-xxxl);
+    margin: var(--space-xl) auto;
   }
 
   .cards-set {
@@ -108,6 +112,7 @@
   .card:last-child {
     display: block;
     text-align: center;
+    padding: var(--space-lg) var(--space-xxxl);
   }
 
 
