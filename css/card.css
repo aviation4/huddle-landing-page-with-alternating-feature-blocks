@@ -1,0 +1,152 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*** Card ***/
+
+.card-set {
+  max-width: var(--max-width);
+  margin: auto var(--space-lg);
+}
+
+.card-set__card {
+  /* Background */
+  background: var(--neutral-white);
+
+  /* Spacing */
+  padding: var(--space-lg);
+  margin: var(--space-xl) auto;
+
+  /* Border */
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--neutral-dark-cyan-alpha-10);
+}
+
+.card-set__card:first-child {
+  margin-top: var(--space-xxl);
+}
+
+.card-set__card:last-child {
+  /* Position */
+  position: relative;
+  top: 140px;
+
+  /* Spacing */
+  margin-top: 0;
+
+  /* Sizing */
+  max-width: 700px;
+}
+
+
+
+/*** Card components ***/
+
+.card__img {
+  padding: var(--space-lg);
+}
+
+.card__h2 {
+  /* Font */
+  font-family: var(--font-primary), sans-serif;
+  font-size: var(--text-md);
+
+  /* Spacing */
+  margin: var(--space-md) 0;
+}
+
+.card__p {
+  color: var(--neutral-grayish-blue);
+  font-size: var(--text-sm);
+}
+
+
+
+
+/****** Media queries ******/
+
+@media (min-width: 768px) {
+  .card-set {
+    margin: auto var(--space-xl);
+  }
+
+  .card__img {
+    padding: var(--space-xl);
+  }
+
+  .card__h2 {
+    font-size: var(--text-lg);
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .card-set {
+    margin: auto var(--space-xxxl);
+  }
+
+  .card-set__card {
+    /* Flexbox */
+    display: flex;
+    flex-direction: row-reverse;
+
+    /* Spacing */
+    padding: 0 var(--space-xxxl);
+    margin: var(--space-xl) auto;
+
+    /* Positon */
+    text-align: left;
+  }
+
+  .card-set__card:first-child {
+    margin-top: var(--space-xxxl);
+  }
+
+  .card-set__card:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .card-set__card:nth-child(even) > img {
+    padding: var(--space-xxl);
+    padding-left: 0;
+  }
+
+  .card-set__card:last-child {
+    /* Position */
+    display: block;
+    text-align: center;
+
+    /* Spacing */
+    padding: var(--space-lg) var(--space-xxxl);
+  }
+
+  .card__img {
+    /* Spacing */
+    padding: var(--space-xxl);
+    padding-right: 0;
+
+    /* Sizing*/
+    width: 50%;
+  }
+
+  .card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card__h2 {
+    font-size: var(--text-xl);
+    margin: var(--space-md) 0;
+  }
+
+  .card__p {
+    font-size: var(--text-md);
+  }
+
+}
