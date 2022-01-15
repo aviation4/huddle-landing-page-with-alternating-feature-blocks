@@ -132,7 +132,6 @@ footer a {
 
 .data__sm-icon-set {
   text-align: center;
-  margin: var(--space-lg) 0;
 }
 
 
@@ -180,6 +179,7 @@ footer a {
 .footer__copyright {
   font-size: var(--text-xs);
   text-align: center;
+  margin-top: var(--space-xl);
 }
 
 
@@ -253,7 +253,7 @@ footer a {
 @media (min-width: 1400px) {
   .footer__data {
     display: grid;
-    grid-template-columns: 30% 1fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 1fr;
     gap: 100px;
   }
 
